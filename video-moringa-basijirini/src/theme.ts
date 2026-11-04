@@ -6,8 +6,8 @@ export const HAUTEUR = 1920;
 export const FPS = 30;
 export const DUREE_TOTALE = 30 * FPS; // 30 secondes = 900 images
 
-// ⚠️ À COMPLÉTER : remplacez par le vrai numéro WhatsApp, puis refaites le rendu.
-export const NUMERO_WHATSAPP = "[AJOUTER LE NUMÉRO]";
+// Numéros WhatsApp affichés sur l'écran final
+export const NUMEROS_WHATSAPP = ["+223 74 40 30 72", "+33 6 83 63 06 75"];
 
 // Découpage des scènes, en secondes
 export const SCENES = {

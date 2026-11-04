@@ -12,7 +12,7 @@ Herboristerie Dr Chouaïbou Mangané. Vert, blanc et touches dorées.
 | 5–12 s | Face avant de la boîte (image réelle recadrée) | Découvrez le Moringa / Basijirini |
 | 12–21 s | Photo réelle du Dr Mangané, lent zoom | Herboristerie Dr Chouaïbou Mangané / Demandez conseil |
 | 21–27 s | Produit + photo côte à côte | Vous souhaitez en savoir plus ? / Contactez-nous |
-| 27–30 s | Écran final | WhatsApp : [AJOUTER LE NUMÉRO] |
+| 27–30 s | Écran final | WhatsApp : +223 74 40 30 72 / +33 6 83 63 06 75 |
 
 - **Musique** : instrumentale douce (kalimba, basse, shaker), créée par ordinateur (`outils/creer_musique.py`), sans droits d'auteur, volume faible.
 - **Sous-titres français** incrustés et aussi fournis à part : `out/sous-titres.srt`.
@@ -27,8 +27,8 @@ avec « Audio → Voix off » en suivant les sous-titres à l'écran.
 **Option Remotion** : placez votre enregistrement dans `public/audio/voix.mp3` (30 s, aligné sur les horaires),
 puis lancez le rendu avec `--props='{"avecVoix":true}'`. La musique baisse automatiquement.
 
-## Ajouter le numéro WhatsApp
-Modifiez `NUMERO_WHATSAPP` dans `src/theme.ts`, puis refaites le rendu.
+## Changer les numéros WhatsApp
+Modifiez `NUMEROS_WHATSAPP` dans `src/theme.ts`, puis refaites le rendu.
 
 ## Refaire la vidéo (ordinateur avec Node.js)
 ```bash

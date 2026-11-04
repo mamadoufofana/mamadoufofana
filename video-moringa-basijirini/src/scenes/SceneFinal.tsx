@@ -3,7 +3,7 @@ import { Apparition } from "../components/Apparition";
 import { Carte } from "../components/Carte";
 import { Scene, ZoneTitre } from "../components/Scene";
 import { TexteOr } from "../components/TexteOr";
-import { COULEURS, NUMERO_WHATSAPP, POLICE } from "../theme";
+import { COULEURS, NUMEROS_WHATSAPP, POLICE } from "../theme";
 
 // Icône générique de discussion (pas de logo de marque)
 const IconeMessage: React.FC = () => (
@@ -36,27 +36,32 @@ export const SceneFinal: React.FC = () => {
           <Carte src="images/emballage-face.png" largeur={460} hauteur={647} zoomA={1.03} duree={90} rayon={22} />
         </Apparition>
       </div>
-      <div style={{ position: "absolute", top: 1110, left: 60, right: 60, display: "flex", justifyContent: "center" }}>
+      <div style={{ position: "absolute", top: 1075, left: 60, right: 60, display: "flex", justifyContent: "center" }}>
         <div
           style={{
             transform: `scale(${pill})`,
             display: "flex",
             alignItems: "center",
-            gap: 20,
+            gap: 24,
             background: COULEURS.vert,
             color: COULEURS.blanc,
             fontFamily: POLICE,
-            fontWeight: 800,
-            fontSize: 44,
-            padding: "18px 36px",
-            borderRadius: 60,
+            padding: "18px 40px",
+            borderRadius: 36,
             border: `4px solid ${COULEURS.orClair}`,
             boxShadow: "0 14px 30px rgba(20,90,36,0.35)",
             whiteSpace: "nowrap",
           }}
         >
           <IconeMessage />
-          WhatsApp : {NUMERO_WHATSAPP}
+          <div style={{ textAlign: "left" }}>
+            <div style={{ fontWeight: 800, fontSize: 34, color: COULEURS.orClair, letterSpacing: 2 }}>WhatsApp</div>
+            {NUMEROS_WHATSAPP.map((n) => (
+              <div key={n} style={{ fontWeight: 800, fontSize: 48, lineHeight: 1.2 }}>
+                {n}
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </Scene>
