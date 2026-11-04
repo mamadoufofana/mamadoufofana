@@ -1,0 +1,21 @@
+{
+  "name": "video-moringa-basijirini",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Publicité motion design 30 s, 9:16, Moringa Basijirini, créée avec Remotion.",
+  "scripts": {
+    "start": "remotion studio",
+    "build": "remotion render PubMoringa out/video.mp4"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.540",
+    "@remotion/fonts": "4.0.540",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "remotion": "4.0.540"
+  },
+  "devDependencies": {
+    "@types/react": "19.1.8",
+    "typescript": "5.8.3"
+  }
+}
