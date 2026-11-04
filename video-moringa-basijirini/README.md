@@ -9,7 +9,7 @@ Herboristerie Dr Chouaïbou Mangané. Vert, blanc et touches dorées.
 | Temps | Scène | Texte à l'écran |
 |---|---|---|
 | 0–5 s | Illustration d'un visage, petits boutons et taches | Boutons et taches sur le visage ? |
-| 5–12 s | Face avant de la boîte (image réelle recadrée) | Découvrez le Moringa / Basijirini |
+| 5–12 s | Face avant de la boîte (image réelle recadrée) | Découvrez le Moringa / Basijirini / Utilisé en médecine traditionnelle africaine |
 | 12–21 s | Photo réelle du Dr Mangané, lent zoom | Herboristerie Dr Chouaïbou Mangané / Demandez conseil |
 | 21–27 s | Produit + photo côte à côte | Vous souhaitez en savoir plus ? / Contactez-nous |
 | 27–30 s | Écran final | WhatsApp : +223 74 40 30 72 / +33 6 83 63 06 75 |

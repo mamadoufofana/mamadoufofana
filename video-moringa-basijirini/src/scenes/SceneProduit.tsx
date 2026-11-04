@@ -12,6 +12,8 @@ export const SceneProduit: React.FC = () => {
   const { fps } = useVideoConfig();
   const entree = spring({ frame: frame - 4, fps, config: { damping: 16, stiffness: 80 } });
   const flottement = Math.sin(frame / 20) * 8;
+  // Bandeau « médecine traditionnelle » : apparaît vers 8 s
+  const bandeau = spring({ frame: frame - 85, fps, config: { damping: 13, stiffness: 110 } });
 
   return (
     <Scene>
@@ -25,7 +27,7 @@ export const SceneProduit: React.FC = () => {
           </div>
         </Apparition>
       </ZoneTitre>
-      <ZoneVisuel haut={500}>
+      <ZoneVisuel haut={480} bas={1345}>
         {/* halo vert derrière la boîte */}
         <div
           style={{
@@ -55,10 +57,29 @@ export const SceneProduit: React.FC = () => {
         })}
         <div
           style={{
-            transform: `translateY(${interpolate(entree, [0, 1], [700, 0]) + flottement}px) rotate(${interpolate(entree, [0, 1], [10, -2])}deg)`,
+            transform: `translateY(${interpolate(entree, [0, 1], [700, -75]) + flottement}px) rotate(${interpolate(entree, [0, 1], [10, -2])}deg)`,
           }}
         >
-          <Carte src="images/emballage-face.png" largeur={540} hauteur={760} zoomDe={1} zoomA={1.05} duree={210} rayon={22} />
+          <Carte src="images/emballage-face.png" largeur={500} hauteur={704} zoomDe={1} zoomA={1.05} duree={210} rayon={22} />
+        </div>
+        <div
+          style={{
+            position: "absolute",
+            bottom: 0,
+            transform: `scale(${bandeau}) rotate(-2deg)`,
+            opacity: bandeau,
+            background: `linear-gradient(180deg, ${COULEURS.vert}, ${COULEURS.vertFonce})`,
+            border: `4px solid ${COULEURS.orClair}`,
+            borderRadius: 30,
+            padding: "16px 40px",
+            textAlign: "center",
+            fontFamily: POLICE,
+            color: COULEURS.blanc,
+            boxShadow: "0 14px 30px rgba(20,90,36,0.4)",
+          }}
+        >
+          <div style={{ fontWeight: 800, fontSize: 40, lineHeight: 1.2 }}>Utilisé en médecine</div>
+          <div style={{ fontWeight: 900, fontSize: 46, lineHeight: 1.2, color: COULEURS.orClair }}>traditionnelle africaine</div>
         </div>
       </ZoneVisuel>
     </Scene>
